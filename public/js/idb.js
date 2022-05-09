@@ -3,7 +3,7 @@
 // create variable to hold db connection
 let db;
 // establish a connection to IndexedDB database called 'cash_db' and set it to version 1
-const request = indexedDB.open('cash_db', 1);
+const request = indexedDB.open('trackinator_db', 1);
 
 request.onupgradeneeded = function (event) {
 	const db = event.target.result;
